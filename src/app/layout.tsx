@@ -17,9 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={inter.className}>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 pt-3  gap-4">
-          <ButtonLink />
+        <div className="flex justify-center">
+          <div className="mt-2 grid grid-cols-1 sm:grid sm:grid-cols-1 md:flex md:justify-end lg:justify-end xl:justify-end gap-4">
+            <ButtonLink />
+          </div>
         </div>
         <div className="flex-1 ml-4 ">{children}</div>
       </body>

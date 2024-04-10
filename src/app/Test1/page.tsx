@@ -67,15 +67,15 @@ export default function TodoList() {
 
   return (
     <div>
-      <h1 className="flex justify-center mb-4">Auto Delete Todo List</h1>
+      <h1 className="flex justify-center mt-4">Auto Delete Todo List</h1>
       {/* <div className="mb-4"></div> */}
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           <div>
             <Card title="List">
               {todolist.map((item, index) => (
                 <div key={index}>
-                  <Button className="mt-2" onClick={() => MoveList(item)}>
+                  <Button className="mb-2" onClick={() => MoveList(item)}>
                     {item.name}{" "}
                   </Button>
                 </div>
@@ -86,7 +86,7 @@ export default function TodoList() {
             <Card title="Fruits">
               {fruit.map((item, index) => (
                 <div key={index}>
-                  <Button className="mt-2" onClick={() => MoveBack(item)}>
+                  <Button className="mb-2" onClick={() => MoveBack(item)}>
                     {item.name}
                   </Button>
                 </div>
@@ -97,7 +97,7 @@ export default function TodoList() {
             <Card title="Vegetable">
               {vegetable.map((item, index) => (
                 <div key={index}>
-                  <Button className="mt-2" onClick={() => MoveBack(item)}>
+                  <Button className="mb-2" onClick={() => MoveBack(item)}>
                     {item.name}
                   </Button>
                 </div>
