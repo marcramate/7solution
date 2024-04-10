@@ -61,7 +61,7 @@ export async function GET() {
       statusText(arg0: string, status: any, statusText: any): unknown;
       users: User[];
     }>(URI);
-    console.log("data:", data.status, data.statusText);
+    // console.log("data:", data.status, data.statusText);
     const summary = groupData(data.users);
 
     console.log("datasum:", summary);
