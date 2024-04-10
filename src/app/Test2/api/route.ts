@@ -1,7 +1,5 @@
 import axios from "axios";
 
-export const dynamic: string = "force-dynamic";
-
 const groupData = (users: User[]): DepartmentSummary => {
   const Depart: DepartmentSummary = {};
 
